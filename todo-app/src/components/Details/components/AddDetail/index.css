@@ -1,0 +1,42 @@
+.addDetail {
+    width: 90%;
+    height: 60px;
+    margin-left: 5%;
+    margin-top: 30px;
+    background: url(img/enter.png) no-repeat left center/ 30px 30px;
+}
+.addDetail .addSubtasks {
+    width: 85%;
+    height: 30px;
+    margin-left: 15%;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #ddd;
+}
+.addDetail ul {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+.addDetail ul li {
+    width: 85%;
+    height: 30px;
+    margin-left: 15%;
+    margin-top: 10px;
+}
+.addDetail ul li .radio {
+    float: left;
+    height: 100%;
+    line-height: 30px;
+}
+.addDetail ul li .showSubtasks {
+    float: left;
+    width: 80%;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 10%;
+    background-color: #ddd;
+    border-radius: 5px;
+}

@@ -1,0 +1,15 @@
+.mainPart .header {
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #ddd;
+}
+.mainPart .header input {
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    outline: none;
+    border: none;
+    background-color: #ddd;
+}

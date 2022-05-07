@@ -1,0 +1,67 @@
+.mainPart .completed {
+    width: 100%;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.completed .completedTitle {
+    width: 90%;
+    height: 30px;
+    padding: 0 5%;
+    background-color: #f0f0f0;
+    line-height: 30px;
+    border-radius: 5px;
+    position: relative;
+}
+.completed .completedTitle .arrow {
+    width: 16px;
+    height: 16px;
+    background: url(img/downArrow.png) no-repeat center center/16px 16px;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.completed .completedTitle .upArrow {
+    width: 16px;
+    height: 16px;
+    background: url(img/upArrow.png) no-repeat center center/16px 16px;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.completed  ul {
+    width: 100%;
+    height: auto;
+}
+.completed  ul li {
+    width: 90%;
+    height: 50px;
+    padding: 0 5%;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #ddd;
+    line-height: 50px;
+    position: relative;
+    display: block;
+}
+.completed  ul li button {
+    position: absolute;
+    height: 30px;
+    line-height: 30px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 3px;
+    cursor: pointer;
+    display: none;
+}
+.completed  ul li button.detele {
+    top: 50%;
+    transform: translate(-100%,-50%);
+}

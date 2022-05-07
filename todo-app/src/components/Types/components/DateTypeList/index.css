@@ -1,0 +1,46 @@
+.types .dateTypeList {
+    width: 100%;
+    margin-top: 10px;
+    height: calc((100% - 163px) * 0.5);
+    border-bottom:1px solid #ccc;
+}
+.types .dateTypeList .search {
+    width: 90%;
+    height: 30px;
+    margin-left: 5%;
+    border-radius: 5px;
+    background: url(img/search.png) no-repeat 5% center/ 20px 20px,#ddd;
+}
+.types .dateTypeList .search input {
+    width: 80%;
+    height: 100%;
+    margin-left: 20%;
+    border: none;
+    outline: none;
+    border-radius: 0  5px 5px 0;
+    background-color: #ddd;
+}
+.types .dateTypeList ul {
+    width: 90%;
+    height: auto;
+    line-height: 30px;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+.types .dateTypeList ul li {
+    width: 100%;
+    height: 25px;
+    line-height: 25px;;
+    margin-bottom: 20px;
+    cursor: pointer;
+    position: relative;
+}
+.types .dateTypeList ul li:hover {
+    background-color: #d8d8d8;
+    border-radius: 5px;
+}
+
+.types .dateTypeList ul li span {
+    position: absolute;
+    right: 5%;
+}

@@ -1,0 +1,7 @@
+.detail {
+    float: left;
+    height: 100%;
+    width: calc(25% - 3px);
+}
+
+

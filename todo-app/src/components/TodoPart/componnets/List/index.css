@@ -1,0 +1,9 @@
+.mainPart .listPart {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+.mainPart .listPart ul {
+    width: 100%;
+    height: auto;
+}

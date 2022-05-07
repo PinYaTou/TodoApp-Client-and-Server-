@@ -1,0 +1,31 @@
+.users{
+    float: left;
+    height: 100%;
+    width: 5%;
+    border-right: 1px solid #ccc ;
+    background-color: #d8d8d8;
+}
+
+.users .user {
+    width: 100%;
+    height: auto;
+}
+.users .user li {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-top: 20px ;
+}
+.users .user li img {
+    width: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.users .addUser {
+    width: 40%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 30%;
+    cursor: pointer;
+}
+
