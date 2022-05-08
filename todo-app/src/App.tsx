@@ -34,6 +34,7 @@ export default function App() {
       setUserLength(data.data.length);
     })
   }
+  
 
   const showCurrentUser = (user: string, userName: string) => {
     setCurrentUser(user);
@@ -184,21 +185,9 @@ export default function App() {
   useEffect(() => {
     getTodos('todos', currentUser).then(data => {
       setTodayTodos(getTodayTodos(data.rel))
-    }) 
-
-    getTodos('todos', currentUser).then(data => {
       setTomorrowTodos(getTomorrowTodos(data.rel))
-    }) 
-
-    getTodos('todos', currentUser).then(data => {
       setAfterTomotrrowTodos(getAfterTomorrowTodos(data.rel))
-    }) 
-
-    getTodos('todos', currentUser).then(data => {
       setAfterTomotrrowTodos(getAfterTomorrowTodos(data.rel))
-    }) 
-
-    getTodos('todos', currentUser).then(data => {
       setPastTodos(getPastTodos(data.rel))
     }) 
   },[currentUser,todo])
@@ -250,7 +239,7 @@ export default function App() {
             changeName={changeTodoName}
             updateDetail={addDetail}
             addDate={addDate}
-          /> : '未选择'
+          /> : null
         }
 
       </Fragment>

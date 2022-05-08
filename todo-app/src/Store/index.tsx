@@ -1,8 +1,9 @@
 /* eslint-disable array-callback-return */
 
+
 import { Todo } from "./interfaces";
 
-export function getTodayTodos(todo: Todo[]) {
+function getTypesTodos(todo: Todo[], limit1: number, limit2: number) {
 
     let todayTodo: Todo[] = [];
     todo.map((todo) => {
@@ -10,52 +11,27 @@ export function getTodayTodos(todo: Todo[]) {
         const date1 = new Date(todo.date).getTime()
         const date2 = d.getTime();
         const day = ((date2 - date1) / (24 * 60 * 60 * 1000));
-        if (day < 1 && day >= 0) {
+        if (day < limit1 && day >= limit2) {
             todayTodo.push(todo)
         }
     })
     return todayTodo
 }
 
+export function getTodayTodos(todo: Todo[]) {
+
+    return getTypesTodos(todo, 1, 0)
+}
+
 export function getTomorrowTodos(todo: Todo[]) {
 
-    let tomorrowTodos: Todo[] = [];
-    todo.map((todo) => {
-        const d = new Date();
-        const date1 = new Date(todo.date).getTime()
-        const date2 = d.getTime();
-        const day = Math.floor((date2 - date1) / (24 * 60 * 60 * 1000));
-        if (day >= -1 && day < 0) {
-            tomorrowTodos.push(todo)
-        }
-    })
-    return tomorrowTodos
+    return getTypesTodos(todo, 0, -1)
 }
 export function getAfterTomorrowTodos(todo: Todo[]) {
 
-    let afterTomorrowTodos: Todo[] = [];
-    todo.map((todo) => {
-        const d = new Date();
-        const date1 = new Date(todo.date).getTime()
-        const date2 = d.getTime();
-        const day = Math.floor((date2 - date1) / (24 * 60 * 60 * 1000));
-        if (day < -1) {
-            afterTomorrowTodos.push(todo)
-        }
-    })
-    return afterTomorrowTodos
+    return getTypesTodos(todo, -1, -2)
 }
 export function getPastTodos(todo: Todo[]) {
 
-    let pastTodos: Todo[] = [];
-    todo.map((todo) => {
-        const d = new Date();
-        const date1 = new Date(todo.date).getTime()
-        const date2 = d.getTime();
-        const day = Math.floor((date2 - date1) / (24 * 60 * 60 * 1000));
-        if (day > 1 && day < 7) {
-            pastTodos.push(todo)
-        }
-    })
-    return pastTodos
+    return getTypesTodos(todo, 7, 1)
 }
